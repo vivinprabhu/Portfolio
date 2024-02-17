@@ -700,7 +700,7 @@ h3.my-profession
 
     .aside .nav li a .fa
     {
-        visibility: hidden;
+        display: none;
     }
 
     .aside .nav
@@ -742,20 +742,18 @@ h3.my-profession
 
     .home .home-img
     {
-        order: 1;
         flex: 0 0 100%;
         max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 8%;
-        margin-left: 3%;
     }
 
     .about .about-content  .skills .skill-item
     {
         flex: 0 0 100%;
-        max-width: 95%;
+        max-width: 90%;
         margin-left: 5%;
     }
 }
@@ -778,5 +776,7 @@ h3.my-profession
     .section
     {
         background: var(--bg-black-700);
+        max-width: 100%;
+        overflow-x: hidden;
     }
 } 
