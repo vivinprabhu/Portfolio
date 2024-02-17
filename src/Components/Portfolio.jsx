@@ -43,7 +43,7 @@ const Portfolio = () => {
                             <div className="home-info padd-15">
                                 <h3 className="hello">Hey<span className='name'> there,</span></h3>
                                 <h3 className="my-profession">I'm a <span className='typing'>Web Developer</span> and a</h3>
-                                <p>Pre-final year student , passionate about Web development and dediacted to learn it everyday.</p>
+                                <p>Pre-final year Computer Science Engineering student, dedicated on continuous learning and improving my skills in web development, focusing on creating user-friendly responsive designs.</p>
                                 <a href="#contact" className='btn hire-me'>Say Hello</a>
 
                                 <div className="social">
@@ -70,7 +70,7 @@ const Portfolio = () => {
                                 <div className="row">
                                     <div className="about-text padd-15">
                                         <h3>Hey! I am <span>Vivinprabhu</span></h3>
-                                        <p>a Web developer and a Pre-Final year Computer Science Engineering student. I am dedicated to continuously learn and improving my skills in web development, focusing on creating user-friendly designs that are responsive across all screen devices.</p>
+                                        <p>currently studying Bachelor of Engineering in Computer Science. </p>
                                     </div>
                                 </div>
                                 <div className='row'>
