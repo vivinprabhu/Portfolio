@@ -230,7 +230,7 @@ const Portfolio = () => {
                                             <i className='fab fa-git'></i>
                                         </div>
                                         <h4>Version Controller</h4>
-                                        <p>I provide decent-level proficiency in version control systems such as Git, ensuring seamless collaboration and efficient code management for your projects.</p>
+                                        <p>I provide decent-level proficiency in version management system such as Git, ensuring version control and efficient code management for our projects.</p>
                                     </div>
                                 </div>
                                 <div className="service-item padd-15">
