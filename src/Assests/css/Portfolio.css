@@ -223,7 +223,6 @@ ul
 h3.hello
 {
     font-size: 28px;
-
 }
 
 h3.hello span{
@@ -603,6 +602,7 @@ h3.my-profession
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .portfolio .portfolio-item p span
@@ -627,6 +627,11 @@ h3.my-profession
 {
     width: 100%;
     display: block;
+}
+
+.portfolio .portfolio-item-p
+{
+    margin-top: 5%;
 }
 
 /* Contact */
@@ -780,3 +785,22 @@ h3.my-profession
         overflow-x: hidden;
     }
 } 
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: var(--skin-color);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--skin-color-hover);
+}

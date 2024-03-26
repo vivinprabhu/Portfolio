@@ -39,7 +39,6 @@ const Portfolio = () => {
                     <section id='home' className="home section">
                         <div className="container">
                             <div className="row">
-
                                 <div className="home-info padd-15">
                                     <h3 className="hello">Hey<span className='name'> there,</span></h3>
                                     <h3 className="my-profession">I'm a <span className='typing'>Web Developer</span> and a</h3>
@@ -185,7 +184,7 @@ const Portfolio = () => {
                                                             </h3>
                                                             <h4 className='timeline-title'>BE Computer Science and Engineering</h4>
                                                             <p className='timeline-text'>
-                                                                Studying at Sri Krishna College of Technology and my current CGPA is 7.8
+                                                                Studying at Sri Krishna College of Technology and my current CGPA is 7.96
                                                             </p>
                                                         </div>
                                                     </div>
@@ -262,8 +261,8 @@ const Portfolio = () => {
                                                 <img src={project1} alt='project1' />
                                             </div>
                                         </div>
-                                        <p><span>Description : </span>It was my first Frontend team project (in 2022). It is designed for sharing our notes and materials commonly to others. It was developed using ReactJS.<br></br><br></br></p>
-                                        <p1>Source code: <a href='https://github.com/vivinprabhu/V-XPLORE-FRONTEND' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> Live Demo: <a href='https://vxplore.netlify.app/' target="_blank" rel="noopener noreferrer">Click here!</a></p1>
+                                        <p className='portfolio-item-p'><span>Description : </span>It was my first Frontend team project (in 2022). It is designed for sharing our notes and materials commonly to others. It was developed using ReactJS. In this team project I learnt about the team co-ordination, project planning, project management and time management.<br></br><br></br></p>
+                                        <p><span>Source code:</span> <a href='https://github.com/vivinprabhu/V-XPLORE-FRONTEND' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vxplore.netlify.app/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
                                     <div className="portfolio-item padd-15">
                                         <div className="portfolio-item-inner shadow-dark">
@@ -271,8 +270,8 @@ const Portfolio = () => {
                                                 <img src={project2} alt='project2' />
                                             </div>
                                         </div>
-                                        <p><span>Description : </span>It is created for generate a random strong password (combination of caps,lowercase,numbers and special characters) copy and use it. It was developed using ReactJS (in 2023).<br></br><br></br></p>
-                                        <p>Source code: <a href='https://github.com/vivinprabhu/Password-Generator-ReactJS' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> Live Demo: <a href='https://vivinprabhu.github.io/Password-Generator-ReactJS/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
+                                        <p className='portfolio-item-p'><span>Description : </span>It is created for generate a random strong password (combination of caps,lowercase,numbers and special characters) copy and use it. It was developed using ReactJS. It is developed using ReactJs. Tostify library is included inorder to give a pop-up wheather the user copied the password already or not.<br></br><br></br></p>
+                                        <p><span>Source code:</span> <a href='https://github.com/vivinprabhu/Password-Generator-ReactJS' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vivinprabhu.github.io/Password-Generator-ReactJS/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
                                     <div className="portfolio-item padd-15">
                                         <div className="portfolio-item-inner shadow-dark">
@@ -280,8 +279,8 @@ const Portfolio = () => {
                                                 <img src={project3} alt='project2' />
                                             </div>
                                         </div>
-                                        <p><span>Description : </span>It is designed for manage their home(like remainders for maintainance works,calculate income and expenses). It was developed using ReactJS, MySql and SpringBoot.<br></br><br></br></p>
-                                        <p>Source code: <a href='https://github.com/vivinprabhu/Password-Generator-ReactJS' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> Live Demo: <a href='https://vivinprabhu.github.io/Password-Generator-ReactJS/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
+                                        <p className='portfolio-item-p'><span>Description : </span>Merniverse is an educational platform for learning MERN stack web development. This project is developed using ReactJS, ExpressJS, MongoDB and GSheet DB. You can learn and attend test, an e-certificate will be automatically mailed to you. Secure login with jwt token also an verification link will be sent while regestering the account.<br></br><br></br></p>
+                                        <p> <span>Frontend source code:</span> <a href='https://github.com/vivinprabhu/Merniverse-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Backend source code:</span> <a href='https://github.com/vivinprabhu/Merniverse-Backend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://merniverse.onrender.com/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
                                 </div>
                             </div>
