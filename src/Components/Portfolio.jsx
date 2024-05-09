@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import '../Assests/css/Portfolio.css';
 import '../Assests/css/color-1.css';
@@ -9,14 +9,7 @@ import project1 from '../Assests/images/Project 1.png';
 import project2 from '../Assests/images/Project 2.png';
 import project3 from '../Assests/images/Project 3.png';
 
-
 const Portfolio = () => {
-
-    const [activeSection, setActiveSection] = useState('home');
-
-    const handleSectionClick = (sectionId) => {
-        setActiveSection(sectionId);
-    };
 
     return (
         <div>
@@ -27,218 +20,123 @@ const Portfolio = () => {
                     </div>
 
                     <ul className='nav'>
-                        <li><a href="#home" className={activeSection === 'home' ? 'active' : ''} onClick={() => handleSectionClick('home')}><i className="fa fa-home"></i>Home</a></li>
-                        <li><a href="#about" className={activeSection === 'about' ? 'active' : ''} onClick={() => handleSectionClick('about')}><i className="fa fa-user"></i>About</a></li>
-                        <li><a href="#services" className={activeSection === 'services' ? 'active' : ''} onClick={() => handleSectionClick('services')}><i className="fa fa-list"></i>Services</a></li>
-                        <li><a href="#portfolio" className={activeSection === 'portfolio' ? 'active' : ''} onClick={() => handleSectionClick('portfolio')}><i className="fa fa-briefcase"></i>Portfolio</a></li>
-                        <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={() => handleSectionClick('contact')}><i className="fa fa-comments"></i>Contact</a></li>
+                        <li><a href="#about"><i className='material-icons'>person</i>About me</a></li>
+                        <li><a href="#skills"><i className='material-icons'>construction</i>Skills</a></li>
+                        <li><a href="#portfolio"><i className='material-icons'>work</i>Projects</a></li>
+                        <li><a href="#contact"><i className='material-icons'>question_answer</i>Contact</a></li>
                     </ul>
                 </div>
 
                 <div className="main-content">
-                    <section id='home' className="home section">
+                    <section id='about' className="about section">
                         <div className="container">
                             <div className="row">
-                                <div className="home-info padd-15">
+                                <div className="about-info padd-15" data-aos="zoom-in-right">
                                     <h3 className="hello">Hey<span className='name'> there,</span></h3>
-                                    <h3 className="my-profession">I'm a <span className='typing'>Web Developer</span> and a</h3>
-                                    <p>Pre-final year Computer Science Engineering student, dedicated on continuous learning and improving my skills in web development, focusing on creating user-friendly responsive designs.</p>
-                                    <a href="https://drive.google.com/uc?export=download&id=1XPpF_imGPEQp1DRXj8chfZmR1M2dL95m" className='btn hire-me'>Download CV</a>
+                                    <h3 className="my-profession">I'm a <span className='typing'>Vivinprabhu</span></h3>
+                                    <p>a full-stack developer, currently pursuing my Bachelor of Computer Science and Engineering. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
+                                    <a target='blank' href="https://drive.google.com/file/d/1EbfOpCXmVGVLpt5qmXlyVDodX77-Avln/view?usp=drive_link" className='btn hire-me'>Resume</a>
 
                                     <div className="social">
                                         <a href='https://www.linkedin.com/in/vivinprabhu/' target="_blank" rel="noopener noreferrer"><i className='fab fa-linkedin'></i></a>
                                         <a href='https://github.com/vivinprabhu' target="_blank" rel="noopener noreferrer"><i className='fab fa-github-square'></i></a>
                                     </div>
                                 </div>
-                                <div className="home-img">
+                                <div className="about-img" data-aos="zoom-in-left">
                                     <img src={profilePhoto} alt="profilePhoto" />
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section id='about' className="about section">
+                    <section id='skills' className="skills section">
                         <div className="container">
                             <div className="row">
-                                <div className="section-title padd-15">
-                                    <h2>About Me</h2>
+                                <div className="section-title">
+                                    <h2>Skills</h2>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="about-content">
-                                    <div className="row">
-                                        <div className="about-text padd-15">
-                                            <h3>Hey! I am <span>Vivinprabhu</span></h3>
-                                            <p>currently studying Bachelor of Engineering degree in Computer Science at Sri Krishna College of Technology.</p>
-                                        </div>
-                                    </div>
-                                    <div className='row'>
-                                        <div className="personal-info padd-15">
-                                            <div className="row">
 
-                                                <div className="info-item padd-15">
-                                                    <p>Birthday: <span>14 July 2004</span></p>
-                                                </div>
-                                                <div className="info-item padd-15">
-                                                    <p>Gender: <span>Male</span></p>
-                                                </div>
-                                                <div className="info-item padd-15">
-                                                    <p>Communication: <span>Tamil and English</span></p>
-                                                </div>
-                                                <div className="info-item padd-15">
-                                                    <p>Degree: <span>Pre-Final year student</span></p>
-                                                </div>
-                                                <div className="info-item padd-15">
-                                                    <p>Location: <span>Coimbatore</span></p>
-                                                </div>
-                                                <div className="info-item padd-15">
-                                                    <p>Experience: <span>Fresher</span></p>
-                                                </div>
-                                                <div className="info-item padd-15">
-                                                    <p>Email: <span>cseskct255vivinprabhu.s@gmail.com</span></p>
-                                                </div>
-                                            </div>
-                                            <div className="row">
-                                                <div className="buttons padd-15">
-                                                    <a href='#contact' className='btn hire-me'>Wanna to know more? Click here!</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="skills">
-                                            <div className="row">
-                                                <div className="skill-item padd-15">
-                                                    <h5>HTML & CSS</h5>
-                                                    <div className="progress">
-                                                        <div className="progress-in" style={{ width: "90%" }}></div>
-                                                        <div className="skill-percent">90%</div>
+                            <div className="skills-content">
+                                <div className="row">
+                                    <div className="education" data-aos="zoom-in">
+                                        <h3 className="title">Education</h3>
+                                        <div className="row">
+                                            <div className="timeline-box padd-15">
+                                                <div className="timeline shadow-dark">
+                                                    <div className="timeline-item">
+                                                        <div className="circle-dot"></div>
+                                                        <h3 className="timeline-date">
+                                                            <i className='fa fa-calendar'></i> 2018 - 2019
+                                                        </h3>
+                                                        <h4 className='timeline-title'>SSC</h4>
+                                                        <p className='timeline-text'>
+                                                            Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur
+                                                        </p>
                                                     </div>
-                                                </div>
-                                                <div className="skill-item padd-15">
-                                                    <h5>MongoDB</h5>
-                                                    <div className="progress">
-                                                        <div className="progress-in" style={{ width: "80%" }}></div>
-                                                        <div className="skill-percent">80%</div>
+                                                    <div className="timeline-item">
+                                                        <div className="circle-dot"></div>
+                                                        <h3 className="timeline-date">
+                                                            <i className='fa fa-calendar'></i> 2020 - 2021
+                                                        </h3>
+                                                        <h4 className='timeline-title'>HSC (Computer Science)</h4>
+                                                        <p className='timeline-text'>
+                                                            Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur
+                                                        </p>
                                                     </div>
-                                                </div>
-                                                <div className="skill-item padd-15">
-                                                    <h5>Express JS</h5>
-                                                    <div className="progress">
-                                                        <div className="progress-in" style={{ width: "80%" }}></div>
-                                                        <div className="skill-percent">80%</div>
-                                                    </div>
-                                                </div>
-                                                <div className="skill-item padd-15">
-                                                    <h5>React JS</h5>
-                                                    <div className="progress">
-                                                        <div className="progress-in" style={{ width: "85%" }}></div>
-                                                        <div className="skill-percent">85%</div>
-                                                    </div>
-                                                </div>
-                                                <div className="skill-item padd-15">
-                                                    <h5>Java</h5>
-                                                    <div className="progress">
-                                                        <div className="progress-in" style={{ width: "80%" }}></div>
-                                                        <div className="skill-percent">80%</div>
-                                                    </div>
-                                                </div>
-                                                <div className="skill-item padd-15">
-                                                    <h5>MySQL</h5>
-                                                    <div className="progress">
-                                                        <div className="progress-in" style={{ width: "75%" }}></div>
-                                                        <div className="skill-percent">75%</div>
+                                                    <div className="timeline-item">
+                                                        <div className="circle-dot"></div>
+                                                        <h3 className="timeline-date">
+                                                            <i className='fa fa-calendar'></i> 2021 - Present
+                                                        </h3>
+                                                        <h4 className='timeline-title'>BE Computer Science and Engineering</h4>
+                                                        <p className='timeline-text'>
+                                                            Studying at Sri Krishna College of Technology and my current CGPA is 7.96
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <div className="education padd-15">
-                                            <h3 className="title">Education</h3>
-                                            <div className="row">
-                                                <div className="timeline-box padd-15">
-                                                    <div className="timeline shadow-dark">
-                                                        <div className="timeline-item">
-                                                            <div className="circle-dot"></div>
-                                                            <h3 className="timeline-date">
-                                                                <i className='fa fa-calendar'></i> 2018 - 2019
-                                                            </h3>
-                                                            <h4 className='timeline-title'>SSC</h4>
-                                                            <p className='timeline-text'>
-                                                                Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur and scored 80.2%
-                                                            </p>
-                                                        </div>
-                                                        <div className="timeline-item">
-                                                            <div className="circle-dot"></div>
-                                                            <h3 className="timeline-date">
-                                                                <i className='fa fa-calendar'></i> 2020 - 2021
-                                                            </h3>
-                                                            <h4 className='timeline-title'>HSC (Computer Science)</h4>
-                                                            <p className='timeline-text'>
-                                                                Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur and scored 88.4%
-                                                            </p>
-                                                        </div>
-                                                        <div className="timeline-item">
-                                                            <div className="circle-dot"></div>
-                                                            <h3 className="timeline-date">
-                                                                <i className='fa fa-calendar'></i> 2021 - Present
-                                                            </h3>
-                                                            <h4 className='timeline-title'>BE Computer Science and Engineering</h4>
-                                                            <p className='timeline-text'>
-                                                                Studying at Sri Krishna College of Technology and my current CGPA is 7.96
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
 
-                    <section id='services' className="service section">
-                        <div className="container">
-                            <div className="row">
-                                <div className="section-title padd-15">
-                                    <h2>Services</h2>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="service-item padd-15">
-                                    <div className="service-item-inner">
-                                        <div className="icon">
-                                            <i className='fa fa-laptop-code'></i>
+                                    <div className="skill-list" data-aos="zoom-in">
+                                        <div className="skill-list-container">
+                                            <h3 className="title">Skills</h3>
+                                            <div className="skill-list-box-container">
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-react-original"></i>
+                                                    <p>React JS</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-express-original"></i>
+                                                    <p>Express JS</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-nodejs-plain"></i>
+                                                    <p>Node JS</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-mongodb-plain"></i>
+                                                    <p>MongoDB</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-mysql-original"></i>
+                                                    <p>MySQL</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-java-plain"></i>
+                                                    <p>Java</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-html5-plain"></i>
+                                                    <p>HTML</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-css3-plain"></i>
+                                                    <p>CSS</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h4>UI/UX Design</h4>
-                                        <p>I specialize in developing user interfaces with a focus on user-friendly design, making it easy to use, providing value to the user and  enhancing the overall user experience.</p>
-                                    </div>
-                                </div>
-                                <div className="service-item padd-15">
-                                    <div className="service-item-inner">
-                                        <div className="icon">
-                                            <i className='fa fa-code'></i>
-                                        </div>
-                                        <h4>Fullstack Development</h4>
-                                        <p>Seasoned specialized in MongoDb, ExpressJS, React and NodeJS, skillfully creating  dynamic, responsive interfaces & robust server-side solutions for seamless web applications.</p>
-                                    </div>
-                                </div>
-                                <div className="service-item padd-15">
-                                    <div className="service-item-inner">
-                                        <div className="icon">
-                                            <i className='fab fa-git'></i>
-                                        </div>
-                                        <h4>Version Controller</h4>
-                                        <p>I provide decent-level proficiency in version control systems such as Git, ensuring seamless collaboration and efficient code management for your projects.</p>
-                                    </div>
-                                </div>
-                                <div className="service-item padd-15">
-                                    <div className="service-item-inner">
-                                        <div className="icon">
-                                            <i className='fa fa-palette'></i>
-                                        </div>
-                                        <h4>Adobe Photoshop</h4>
-                                        <p>Additionally, competent in Adobe Photoshop at an intermediate level, demonstrating a solid foundation in design and image editing. Have ability to edit what the user needs as assests.</p>
                                     </div>
                                 </div>
                             </div>
@@ -249,45 +147,67 @@ const Portfolio = () => {
                         <div className="container">
                             <div className="row">
                                 <div className="section-title padd-15">
-                                    <h2>Portfolio</h2>
+                                    <h2>Projects</h2>
                                 </div>
                             </div>
                             <div className="portfolio-heading padd-15">
-                                <h2>My Projects</h2>
                                 <div className="row">
-                                    <div className="portfolio-item padd-15">
+                                    <div className="portfolio-item padd-15" data-aos="zoom-in">
                                         <div className="portfolio-item-inner shadow-dark">
                                             <div className="portfolio-img">
                                                 <img src={project1} alt='project1' />
                                             </div>
                                         </div>
-                                        <p className='portfolio-item-p'><span>Description : </span>It was my first Frontend team project (in 2022). It is designed for sharing our notes and materials commonly to others. It was developed using ReactJS. In this team project I learnt about the team co-ordination, project planning, project management and time management.<br></br><br></br></p>
-                                        <p><span>Source code:</span> <a href='https://github.com/vivinprabhu/V-XPLORE-FRONTEND' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vxplore.netlify.app/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
+                                        <p className='portfolio-item-p'><span>Description : </span>Developed to generate a strong password.<br></br></p>
+                                        <p className='portfolio-item-p'><span>Tech stack : </span>ReactJS, Tostify library, CSS<br></br></p>
+                                        <ul>
+                                            <p><span>Highlights : </span></p>
+                                            <li>Responsive across all screens.</li>
+                                            <li>Implemented React tostify for giving alert wheather the password is copied or not.</li>
+                                            <li>User can select the range of the password from 8-42.</li>
+                                        </ul> <br></br>
+                                        <p> <span>Source code:</span> <a href='https://github.com/vivinprabhu/Password-Generator-ReactJS' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vivinprabhu.github.io/Password-Generator-ReactJS/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
-                                    <div className="portfolio-item padd-15">
+
+                                    <div className="portfolio-item padd-15" data-aos="zoom-in">
                                         <div className="portfolio-item-inner shadow-dark">
                                             <div className="portfolio-img">
                                                 <img src={project2} alt='project2' />
                                             </div>
                                         </div>
-                                        <p className='portfolio-item-p'><span>Description : </span>It is created for generate a random strong password (combination of caps,lowercase,numbers and special characters) copy and use it. It was developed using ReactJS. It is developed using ReactJs. Tostify library is included inorder to give a pop-up wheather the user copied the password already or not.<br></br><br></br></p>
-                                        <p><span>Source code:</span> <a href='https://github.com/vivinprabhu/Password-Generator-ReactJS' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vivinprabhu.github.io/Password-Generator-ReactJS/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
+                                        <p className='portfolio-item-p'><span>Description : </span>NoteX is a simple application for taking and sharing our notes.<br></br></p>
+                                        <p className='portfolio-item-p'><span>Tech stack : </span>MongoDB, ExpressJS, ReactJS, NodeJS, GSheet DB<br></br></p>
+                                        <ul>
+                                            <p><span>Highlights : </span></p>
+                                            <li>JWT token-based login system with email verification while signup.</li>
+                                            <li>Stored passwords securely in the database with salting encryption.</li>
+                                            <li>E-certificates will be generated and emailed automatically.</li>
+                                        </ul> <br></br>
+                                        <p> <span>Frontend source code:</span> <a href='https://github.com/vivinprabhu/Merniverse-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Backend source code:</span> <a href='https://github.com/vivinprabhu/Merniverse-Backend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://merniverse.onrender.com/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
-                                    <div className="portfolio-item padd-15">
+
+                                    <div className="portfolio-item padd-15" data-aos="zoom-in">
                                         <div className="portfolio-item-inner shadow-dark">
                                             <div className="portfolio-img">
-                                                <img src={project3} alt='project2' />
+                                                <img src={project3} alt='project3' />
                                             </div>
                                         </div>
-                                        <p className='portfolio-item-p'><span>Description : </span>Merniverse is an educational platform for learning MERN stack web development. This project is developed using ReactJS, ExpressJS, MongoDB and GSheet DB. You can learn and attend test, an e-certificate will be automatically mailed to you. Secure login with jwt token also an verification link will be sent while regestering the account.<br></br><br></br></p>
-                                        <p> <span>Frontend source code:</span> <a href='https://github.com/vivinprabhu/Merniverse-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Backend source code:</span> <a href='https://github.com/vivinprabhu/Merniverse-Backend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://merniverse.onrender.com/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
+                                        <p className='portfolio-item-p'><span>Description : </span>NoteX is a simple application for taking and sharing our notes.<br></br></p>
+                                        <p className='portfolio-item-p'><span>Tech stack : </span>MongoDB, ExpressJS, ReactJS, NodeJS, AOS-React library, Redux<br></br></p>
+                                        <ul>
+                                            <p><span>Highlights : </span></p>
+                                            <li>Implemented relational mapping between collections.</li>
+                                            <li>Storing JWT in httpOnly cookie ensure to avoild XSS attacks.</li>
+                                            <li>Implemented role-based permissions in API-calls.</li>
+                                        </ul> <br></br>
+                                        <p> <span>Frontend source code:</span> <a href='https://github.com/vivinprabhu/NoteX-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Backend source code:</span> <a href='https://github.com/vivinprabhu/NoteX-Backend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://notex-amfu.onrender.com/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section id='contact' className='contact section'>
+                    <section id='contact' className='contact section' data-aos="fade-up">
                         <div className="container">
                             <div className="row">
                                 <div className="section-title padd-15">
