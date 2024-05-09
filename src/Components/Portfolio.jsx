@@ -34,7 +34,7 @@ const Portfolio = () => {
                                 <div className="about-info padd-15" data-aos="zoom-in-right">
                                     <h3 className="hello">Hey<span className='name'> there,</span></h3>
                                     <h3 className="my-profession">I'm a <span className='typing'>Vivinprabhu</span></h3>
-                                    <p>a full-stack developer, currently pursuing my Bachelor of Computer Science and Engineering. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
+                                    <p>a full-stack developer, currently pursuing Bachelor of Computer Science and Engineering. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
                                     <a target='blank' href="https://drive.google.com/file/d/1EbfOpCXmVGVLpt5qmXlyVDodX77-Avln/view?usp=drive_link" className='btn hire-me'>Resume</a>
 
                                     <div className="social">
@@ -163,8 +163,8 @@ const Portfolio = () => {
                                         <ul>
                                             <p><span>Highlights : </span></p>
                                             <li>Responsive across all screens.</li>
-                                            <li>Implemented React tostify for giving alert wheather the password is copied or not.</li>
-                                            <li>User can select the range of the password from 8-42.</li>
+                                            <li>Implemented React tostify for giving alert whether the password is copied or not.</li>
+                                            <li>User can select the range of the password size from 8-42.</li>
                                         </ul> <br></br>
                                         <p> <span>Source code:</span> <a href='https://github.com/vivinprabhu/Password-Generator-ReactJS' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vivinprabhu.github.io/Password-Generator-ReactJS/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
@@ -175,7 +175,7 @@ const Portfolio = () => {
                                                 <img src={project2} alt='project2' />
                                             </div>
                                         </div>
-                                        <p className='portfolio-item-p'><span>Description : </span>NoteX is a simple application for taking and sharing our notes.<br></br></p>
+                                        <p className='portfolio-item-p'><span>Description : </span>Merniverse is a learning platform for mern stack.<br></br></p>
                                         <p className='portfolio-item-p'><span>Tech stack : </span>MongoDB, ExpressJS, ReactJS, NodeJS, GSheet DB<br></br></p>
                                         <ul>
                                             <p><span>Highlights : </span></p>
