@@ -197,8 +197,8 @@ const Portfolio = () => {
                                         <ul>
                                             <p><span>Highlights : </span></p>
                                             <li>Implemented relational mapping between collections.</li>
-                                            <li>Storing JWT in httpOnly cookie ensure to avoild XSS attacks.</li>
-                                            <li>Implemented role-based permissions in API-calls.</li>
+                                            <li>Storing JWT in httpOnly cookie ensure to avoid XSS attacks.</li>
+                                            <li>Implemented role-based permissions in API calls.</li>
                                         </ul> <br></br>
                                         <p> <span>Frontend source code:</span> <a href='https://github.com/vivinprabhu/NoteX-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Backend source code:</span> <a href='https://github.com/vivinprabhu/NoteX-Backend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://notex-amfu.onrender.com/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
