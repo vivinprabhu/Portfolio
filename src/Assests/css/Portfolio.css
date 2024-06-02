@@ -166,6 +166,7 @@ body
     margin: 0 10px;
 }
 
+
 .aside .nav li a{
     font-size: 14px;
     font-weight: 600;
@@ -173,6 +174,10 @@ body
     color: var(--text-black-900);
     padding: 15px;
     border-bottom: 1px solid var(--text-black-50);
+}
+
+.aside .nav li a:hover{
+    color: var(--skin-color-hover);
 }
 
 .aside .nav li a i{
@@ -435,6 +440,21 @@ h3.my-profession
 .skills .skills-content .skill-list .skill-list-container .skill-list-box i{
     color: var(--skin-color);
     font-size: 30px;
+    animation: skillIcon 3.5s infinite;
+}
+
+@keyframes skillIcon {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.skills .skills-content .skill-list .skill-list-container .skill-list-box i{
+    color: var(--skin-color);
+    font-size: 30px;
 }
 
 .skills .skills-content .skill-list .skill-list-container .skill-list-box p{
@@ -492,6 +512,15 @@ h3.my-profession
 {
     width: 100%;
     display: block;
+    transition: 0.2s ease-in-out;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img:hover
+{
+    width: 100%;
+    display: block;
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
 }
 
 .portfolio .portfolio-item-p

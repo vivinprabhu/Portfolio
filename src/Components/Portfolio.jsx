@@ -31,18 +31,18 @@ const Portfolio = () => {
                     <section id='about' className="about section">
                         <div className="container">
                             <div className="row">
-                                <div className="about-info padd-15" data-aos="zoom-in-right">
+                                <div className="about-info padd-15" data-aos="flip-down">
                                     <h3 className="hello">Hey<span className='name'> there,</span></h3>
                                     <h3 className="my-profession">I'm a <span className='typing'>Vivinprabhu</span></h3>
                                     <p>a full-stack developer, currently pursuing Bachelor of Computer Science and Engineering. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
-                                    <a target='blank' href="https://drive.google.com/file/d/1EbfOpCXmVGVLpt5qmXlyVDodX77-Avln/view?usp=drive_link" className='btn hire-me'>Resume</a>
+                                    <a target='blank' href="https://drive.google.com/file/d/1G0jggpD--vKQJ4YMD8FW7WKJNUOZqVbY/view?usp=sharing" className='btn hire-me'>Resume</a>
 
                                     <div className="social">
                                         <a href='https://www.linkedin.com/in/vivinprabhu/' target="_blank" rel="noopener noreferrer"><i className='fab fa-linkedin'></i></a>
                                         <a href='https://github.com/vivinprabhu' target="_blank" rel="noopener noreferrer"><i className='fab fa-github-square'></i></a>
                                     </div>
                                 </div>
-                                <div className="about-img" data-aos="zoom-in-left">
+                                <div className="about-img" data-aos="flip-down">
                                     <img src={profilePhoto} alt="profilePhoto" />
                                 </div>
                             </div>
@@ -60,7 +60,6 @@ const Portfolio = () => {
                             <div className="skills-content">
                                 <div className="row">
                                     <div className="education" data-aos="zoom-in">
-                                        <h3 className="title">Education</h3>
                                         <div className="row">
                                             <div className="timeline-box padd-15">
                                                 <div className="timeline shadow-dark">
@@ -71,7 +70,7 @@ const Portfolio = () => {
                                                         </h3>
                                                         <h4 className='timeline-title'>SSC</h4>
                                                         <p className='timeline-text'>
-                                                            Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur
+                                                            Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur.
                                                         </p>
                                                     </div>
                                                     <div className="timeline-item">
@@ -81,7 +80,7 @@ const Portfolio = () => {
                                                         </h3>
                                                         <h4 className='timeline-title'>HSC (Computer Science)</h4>
                                                         <p className='timeline-text'>
-                                                            Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur
+                                                            Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur.
                                                         </p>
                                                     </div>
                                                     <div className="timeline-item">
@@ -91,7 +90,7 @@ const Portfolio = () => {
                                                         </h3>
                                                         <h4 className='timeline-title'>BE Computer Science and Engineering</h4>
                                                         <p className='timeline-text'>
-                                                            Studying at Sri Krishna College of Technology and my current CGPA is 7.96
+                                                            Studying at Sri Krishna College of Technology at Coimbatore with current CGPA of 8.05 out of 10.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -101,7 +100,6 @@ const Portfolio = () => {
 
                                     <div className="skill-list" data-aos="zoom-in">
                                         <div className="skill-list-container">
-                                            <h3 className="title">Skills</h3>
                                             <div className="skill-list-box-container">
                                                 <div className="skill-list-box" data-aos="zoom-in">
                                                     <i class="devicon-react-original"></i>
