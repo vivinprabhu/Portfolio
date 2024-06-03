@@ -34,7 +34,7 @@ const Portfolio = () => {
                                 <div className="about-info padd-15" data-aos="flip-down">
                                     <h3 className="hello">Hey<span className='name'> there,</span></h3>
                                     <h3 className="my-profession">I'm a <span className='typing'>Vivinprabhu</span></h3>
-                                    <p>a full-stack developer, currently pursuing Bachelor of Computer Science and Engineering. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
+                                    <p>a full-stack developer, currently pursuing Bachelor of Computer Science and Engineering degree. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
                                     <a target='blank' href="https://drive.google.com/file/d/1G0jggpD--vKQJ4YMD8FW7WKJNUOZqVbY/view?usp=sharing" className='btn hire-me'>Resume</a>
 
                                     <div className="social">
