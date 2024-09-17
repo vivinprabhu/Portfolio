@@ -35,7 +35,7 @@ const Portfolio = () => {
                                     <h3 className="hello">Hey<span className='name'> there,</span></h3>
                                     <h3 className="my-profession">I'm a <span className='typing'>Vivinprabhu</span></h3>
                                     <p>a full-stack developer, currently pursuing Bachelor of Computer Science and Engineering degree. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
-                                    <a target='blank' href="https://drive.google.com/file/d/1-OCDjvFXPA1Q9PjIlf10OHaJPQZhf-MU/view?usp=sharing" className='btn hire-me'>Resume</a>
+                                    <a target='blank' href="https://drive.google.com/file/d/1PkFseDmLqcyDzkuK3zRYSQEwdalHjKmu/view?usp=sharing" className='btn hire-me'>Resume</a>
 
                                     <div className="social">
                                         <a href='https://www.linkedin.com/in/vivinprabhu/' target="_blank" rel="noopener noreferrer"><i className='fab fa-linkedin'></i></a>
@@ -126,12 +126,16 @@ const Portfolio = () => {
                                                     <p>Java</p>
                                                 </div>
                                                 <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-git-plain"></i>
+                                                    <p>Git</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
                                                     <i class="devicon-html5-plain"></i>
-                                                    <p>HTML</p>
+                                                    <p>HTML5</p>
                                                 </div>
                                                 <div className="skill-list-box" data-aos="zoom-in">
                                                     <i class="devicon-css3-plain"></i>
-                                                    <p>CSS</p>
+                                                    <p>CSS3</p>
                                                 </div>
                                             </div>
                                         </div>

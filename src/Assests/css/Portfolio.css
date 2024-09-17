@@ -431,6 +431,7 @@ h3.my-profession
     border: 1px solid var(--skin-color);
     border-radius: 10px;
     margin: 15px;
+    background-color: var(--bg-black-100);
 }
 
 .skills .skills-content .skill-list .skill-list-container .skill-list-box:hover{
