@@ -35,7 +35,7 @@ const Portfolio = () => {
                                     <h3 className="hello">Hey<span className='name'> there,</span></h3>
                                     <h3 className="my-profession">I'm a <span className='typing'>Vivinprabhu</span></h3>
                                     <p>a full-stack developer, currently pursuing Bachelor of Computer Science and Engineering degree. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
-                                    <a target='blank' href="https://drive.google.com/file/d/1PkFseDmLqcyDzkuK3zRYSQEwdalHjKmu/view?usp=sharing" className='btn hire-me'>Resume</a>
+                                    <a target='blank' href="https://drive.google.com/file/d/1Buq9gwhRStXmUqFcgK4lUbfqO55CS-Ja/view?usp=sharing" className='btn hire-me'>Resume</a>
 
                                     <div className="social">
                                         <a href='https://www.linkedin.com/in/vivinprabhu/' target="_blank" rel="noopener noreferrer"><i className='fab fa-linkedin'></i></a>
@@ -90,7 +90,7 @@ const Portfolio = () => {
                                                         </h3>
                                                         <h4 className='timeline-title'>BE Computer Science and Engineering</h4>
                                                         <p className='timeline-text'>
-                                                            Studying at Sri Krishna College of Technology at Coimbatore with current CGPA of 8.05 out of 10.
+                                                            Studying at Sri Krishna College of Technology at Coimbatore with current CGPA of 8.1/10.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -126,6 +126,10 @@ const Portfolio = () => {
                                                     <p>Java</p>
                                                 </div>
                                                 <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-spring-original"></i>
+                                                    <p>Spring</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
                                                     <i class="devicon-git-plain"></i>
                                                     <p>Git</p>
                                                 </div>
@@ -136,6 +140,10 @@ const Portfolio = () => {
                                                 <div className="skill-list-box" data-aos="zoom-in">
                                                     <i class="devicon-css3-plain"></i>
                                                     <p>CSS3</p>
+                                                </div>
+                                                <div className="skill-list-box" data-aos="zoom-in">
+                                                    <i class="devicon-javascript-plain"></i>
+                                                    <p>JavaScript</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -235,9 +243,9 @@ const Portfolio = () => {
                                     <p>cseskct255vivinprabhu.s@gmail.com</p>
                                 </div>
                                 <div className="contact-info-item padd-15">
-                                    <div className="icon"><i className='fa fa-globe-europe'></i></div>
-                                    <h4>Domain</h4>
-                                    <p>vivinprabhu.github.io/Portfolio</p>
+                                    <div className="icon"><i className='fa fa-code'></i></div>
+                                    <h4>Leetcode</h4>
+                                    <p>leetcode.com/u/Vivinprabhu</p>
                                 </div>
                             </div>
                             <h3 className="contact-title padd-15">Send me an email</h3>
