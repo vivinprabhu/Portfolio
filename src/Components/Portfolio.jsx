@@ -8,6 +8,7 @@ import profilePhoto from '../Assests/images/profile photo.png';
 import project1 from '../Assests/images/Project 1.png';
 import project2 from '../Assests/images/Project 2.png';
 import project3 from '../Assests/images/Project 3.png';
+import project4 from '../Assests/images/Project 4.png';
 
 const Portfolio = () => {
 
@@ -35,7 +36,7 @@ const Portfolio = () => {
                                     <h3 className="hello">Hey<span className='name'> there,</span></h3>
                                     <h3 className="my-profession">I'm a <span className='typing'>Vivinprabhu</span></h3>
                                     <p>a full-stack developer, currently pursuing Bachelor of Computer Science and Engineering degree. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
-                                    <a target='blank' href="https://drive.google.com/file/d/1Buq9gwhRStXmUqFcgK4lUbfqO55CS-Ja/view?usp=sharing" className='btn hire-me'>Resume</a>
+                                    <a target='blank' href="https://drive.google.com/file/d/1mNdnr4Zyb3VuZATmt1Wx70ThXGQ-Uxh9/view?usp=sharing" className='btn hire-me'>Resume</a>
 
                                     <div className="social">
                                         <a href='https://www.linkedin.com/in/vivinprabhu/' target="_blank" rel="noopener noreferrer"><i className='fab fa-linkedin'></i></a>
@@ -90,7 +91,7 @@ const Portfolio = () => {
                                                         </h3>
                                                         <h4 className='timeline-title'>BE Computer Science and Engineering</h4>
                                                         <p className='timeline-text'>
-                                                            Studying at Sri Krishna College of Technology at Coimbatore with current CGPA of 8.1/10.
+                                                            Studying at Sri Krishna College of Technology at Coimbatore with CGPA of 8.23/10.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -211,6 +212,23 @@ const Portfolio = () => {
                                             <li>Implemented role-based permissions in API calls.</li>
                                         </ul> <br></br>
                                         <p> <span>Frontend source code:</span> <a href='https://github.com/vivinprabhu/NoteX-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Backend source code:</span> <a href='https://github.com/vivinprabhu/NoteX-Backend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://notex-amfu.onrender.com/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
+                                    </div>
+
+                                    <div className="portfolio-item padd-15" data-aos="zoom-in">
+                                        <div className="portfolio-item-inner shadow-dark">
+                                            <div className="portfolio-img">
+                                                <img src={project4} alt='project4' />
+                                            </div>
+                                        </div>
+                                        <p className='portfolio-item-p'><span>Description : </span>(Group project) AirJio is a mobile recharge application.<br></br></p>
+                                        <p className='portfolio-item-p'><span>Tech stack : </span>React Vite, CSS<br></br></p>
+                                        <ul>
+                                            <p><span>Highlights : </span></p>
+                                            <li>Responsive across all screens.</li>
+                                            <li>RazorPay (test) have been implemented for secure payments.</li>
+                                            <li>Freely RazorPay (test) will not be worked while hosting.</li>
+                                        </ul> <br></br>
+                                        <p> <span>Source code:</span> <a href='https://github.com/vivinprabhu/AirJio-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vivinprabhu.github.io/AirJio-Frontend/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
                                     </div>
                                 </div>
                             </div>
