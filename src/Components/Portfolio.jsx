@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../Assests/css/Portfolio.css';
-import '../Assests/css/color-1.css';
-
-import profilePhoto from '../Assests/images/profile photo.png';
 
 import project1 from '../Assests/images/Project 1.png';
 import project2 from '../Assests/images/Project 2.png';
 import project3 from '../Assests/images/Project 3.png';
-import project4 from '../Assests/images/Project 4.png';
+
+import edit1 from '../Assests/images/Edit1.png';
+import edit2 from '../Assests/images/Edit2.png';
+import edit3 from '../Assests/images/Edit3.png';
+
+import Footer from './Footer';
 
 const Portfolio = () => {
 
+    const [activeTab, setActiveTab] = useState("development");
+
+    const changeTab = (tab) => {
+        setActiveTab(tab);
+    }
+
     return (
-        <div>
+        <>
             <div className="main-container">
-                <div className="aside">
+
+                <div className="navbar">
                     <div className="logo">
                         <a href='#about'><span>V</span>ivinprabhu</a>
                     </div>
@@ -23,259 +32,290 @@ const Portfolio = () => {
                     <ul className='nav'>
                         <li><a href="#about"><i className='material-icons'>person</i>About me</a></li>
                         <li><a href="#skills"><i className='material-icons'>construction</i>Skills</a></li>
-                        <li><a href="#portfolio"><i className='material-icons'>work</i>Projects</a></li>
-                        <li><a href="#contact"><i className='material-icons'>question_answer</i>Contact</a></li>
+                        <li><a href="#journey"><i className='material-icons'>timeline</i>Journey</a></li>
+                        <li><a href="#projects"><i className='material-icons'>work</i>Projects</a></li>
                     </ul>
                 </div>
 
-                <div className="main-content">
-                    <section id='about' className="about section">
-                        <div className="container">
-                            <div className="row">
-                                <div className="about-info padd-15" data-aos="flip-down">
-                                    <h3 className="hello">Hey<span className='name'> there,</span></h3>
-                                    <h3 className="my-profession">I'm a <span className='typing'>Vivinprabhu</span></h3>
-                                    <p>a full-stack developer, currently pursuing Bachelor of Computer Science and Engineering degree. I possess the capability to learn new technologies and have the skills to develop responsive frontend and secure backend, and integrate them seamlessly.</p>
-                                    <a target='blank' href="https://drive.google.com/file/d/1mNdnr4Zyb3VuZATmt1Wx70ThXGQ-Uxh9/view?usp=sharing" className='btn hire-me'>Resume</a>
+                {/* Section-1 About me */}
 
-                                    <div className="social">
-                                        <a href='https://www.linkedin.com/in/vivinprabhu/' target="_blank" rel="noopener noreferrer"><i className='fab fa-linkedin'></i></a>
-                                        <a href='https://github.com/vivinprabhu' target="_blank" rel="noopener noreferrer"><i className='fab fa-github-square'></i></a>
+                <div className="section section-1" id='about'>
+                    <h1 data-aos="zoom-in">Hey <span style={{ fontStyle: 'italic' }}>there,</span></h1>
+                    <h1 data-aos="zoom-in">I am <span>Vivinprabhu</span></h1>
+                    <p data-aos="zoom-in">a software developer and I possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelance work, so if you know anyone looking for a developer or editor, feel free to reach me out! </p>
+
+                    <a target='blank' href="https://drive.google.com/file/d/1mNdnr4Zyb3VuZATmt1Wx70ThXGQ-Uxh9/view?usp=sharing" className='btn-resume'>Resume</a>
+                </div>
+
+                {/* Section-2 Skills */}
+
+                <div className="section section-2" id='skills'>
+                    <h1 className='section-title'>Skills</h1>
+                    <div className="skill-list">
+                        <div className="skill-list-container">
+
+                            <div className="skill-list-box-container">
+                                <h2 className='skill-box-title' data-aos="zoom-out">Programming Language</h2>
+                                <div className="skill-items">
+                                    <div className="skill-list-box" data-aos="flip-up">
+                                        <i className="devicon-java-plain"></i>
+                                        <p>Java</p>
                                     </div>
                                 </div>
-                                <div className="about-img" data-aos="flip-down">
-                                    <img src={profilePhoto} alt="profilePhoto" />
+                            </div>
+
+                            <div className="skill-list-box-container">
+                                <h2 className='skill-box-title' data-aos="zoom-out">Web Development</h2>
+                                <div className="skill-items">
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-react-original"></i>
+                                        <p>React JS</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-express-original"></i>
+                                        <p>Express JS</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-spring-original"></i>
+                                        <p>Spring</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-nodejs-plain"></i>
+                                        <p>Node JS</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-html5-plain"></i>
+                                        <p>HTML5</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-css3-plain"></i>
+                                        <p>CSS3</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-javascript-plain"></i>
+                                        <p>JavaScript</p>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div className="skill-list-box-container">
+                                <h2 className='skill-box-title' data-aos="zoom-out">Database</h2>
+                                <div className="skill-items">
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-mysql-original"></i>
+                                        <p>MySQL</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-mongodb-plain"></i>
+                                        <p>MongoDB</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <p>Google Sheets</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="skill-list-box-container">
+                                <h2 className='skill-box-title' data-aos="zoom-out">Tools</h2>
+                                <div className="skill-items">
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-git-plain"></i>
+                                        <p>Git</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-github-original"></i>
+                                        <p>GitHub</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-vscode-plain"></i>
+                                        <p>VS Code</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-postman-plain"></i>
+                                        <p>Postman</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="skill-list-box-container">
+                                <h2 className='skill-box-title' data-aos="zoom-out">Editing</h2>
+                                <div className="skill-items">
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <i className="devicon-photoshop-plain"></i>
+                                        <p>Photoshop 2019</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="zoom-in">
+                                        <p>DaVinci Resolve</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </section>
+                    </div>
+                </div>
 
-                    <section id='skills' className="skills section">
-                        <div className="container">
-                            <div className="row">
-                                <div className="section-title">
-                                    <h2>Skills</h2>
-                                </div>
-                            </div>
 
-                            <div className="skills-content">
-                                <div className="row">
-                                    <div className="education" data-aos="zoom-in">
-                                        <div className="row">
-                                            <div className="timeline-box padd-15">
-                                                <div className="timeline shadow-dark">
-                                                    <div className="timeline-item">
-                                                        <div className="circle-dot"></div>
-                                                        <h3 className="timeline-date">
-                                                            <i className='fa fa-calendar'></i> 2018 - 2019
-                                                        </h3>
-                                                        <h4 className='timeline-title'>SSC</h4>
-                                                        <p className='timeline-text'>
-                                                            Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur.
-                                                        </p>
-                                                    </div>
-                                                    <div className="timeline-item">
-                                                        <div className="circle-dot"></div>
-                                                        <h3 className="timeline-date">
-                                                            <i className='fa fa-calendar'></i> 2020 - 2021
-                                                        </h3>
-                                                        <h4 className='timeline-title'>HSC (Computer Science)</h4>
-                                                        <p className='timeline-text'>
-                                                            Studied at Literacy Mission Matriculation Higher Secondary School,Tiruppur.
-                                                        </p>
-                                                    </div>
-                                                    <div className="timeline-item">
-                                                        <div className="circle-dot"></div>
-                                                        <h3 className="timeline-date">
-                                                            <i className='fa fa-calendar'></i> 2021 - Present
-                                                        </h3>
-                                                        <h4 className='timeline-title'>BE Computer Science and Engineering</h4>
-                                                        <p className='timeline-text'>
-                                                            Studying at Sri Krishna College of Technology at Coimbatore with CGPA of 8.23/10.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                {/* Section-3 Journey */}
 
-                                    <div className="skill-list" data-aos="zoom-in">
-                                        <div className="skill-list-container">
-                                            <div className="skill-list-box-container">
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-react-original"></i>
-                                                    <p>React JS</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-express-original"></i>
-                                                    <p>Express JS</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-nodejs-plain"></i>
-                                                    <p>Node JS</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-mongodb-plain"></i>
-                                                    <p>MongoDB</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-mysql-original"></i>
-                                                    <p>MySQL</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-java-plain"></i>
-                                                    <p>Java</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-spring-original"></i>
-                                                    <p>Spring</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-git-plain"></i>
-                                                    <p>Git</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-html5-plain"></i>
-                                                    <p>HTML5</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-css3-plain"></i>
-                                                    <p>CSS3</p>
-                                                </div>
-                                                <div className="skill-list-box" data-aos="zoom-in">
-                                                    <i class="devicon-javascript-plain"></i>
-                                                    <p>JavaScript</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div className="section section-3" id='journey'>
+                    <h1 className='section-title'>Journey</h1>
+
+                    <div className="timeline">
+                        <div className="timeline-item">
+                            <div className="circle-dot"></div>
+                            <h3 className="timeline-date" data-aos="zoom-out-left">
+                                <span className="material-icons">calendar_month</span> Nov 2021 - Mar 2025
+                            </h3>
+                            <h4 className='timeline-title' data-aos="zoom-out-left">BE Computer Science and Engineering</h4>
+                            <p className='timeline-text' data-aos="zoom-out-left">
+                                Completed the Bachelor's degree with the CGPA of 8.23/10.
+                            </p>
                         </div>
-                    </section>
+                        <div className="timeline-item">
+                            <div className="circle-dot"></div>
+                            <h3 className="timeline-date" data-aos="zoom-out-left">
+                                <span className="material-icons">calendar_month</span> May 2025 - Present
+                            </h3>
+                            <h4 className='timeline-title' data-aos="zoom-out-left">Software Developer Trainee at i-exceed technology</h4>
+                            <p className='timeline-text' data-aos="zoom-out-left">
+                                i-exceed technology solutions is a Fintech company that helps the world’s leading banks and financial institutions deliver stunning user journeys for their customers and staff.
+                                <ul>
+                                    <li>Delivered a technical presentation on Dart for Web development, highlighting its capabilities and use cases.</li>
+                                    <li>Contributed to the development of a comprehensive Banking UI; independently designed and implemented the Insurance module.</li>
+                                </ul>
 
-                    <section id='portfolio' className="portfolio section">
-                        <div className="container">
-                            <div className="row">
-                                <div className="section-title padd-15">
-                                    <h2>Projects</h2>
+                                <div className="journey-skills">
+                                    <p>Java</p>
+                                    <p>Dart</p>
+                                    <p>Flutter</p>
                                 </div>
-                            </div>
-                            <div className="portfolio-heading padd-15">
-                                <div className="row">
-                                    <div className="portfolio-item padd-15" data-aos="zoom-in">
-                                        <div className="portfolio-item-inner shadow-dark">
-                                            <div className="portfolio-img">
-                                                <img src={project1} alt='project1' />
-                                            </div>
-                                        </div>
-                                        <p className='portfolio-item-p'><span>Description : </span>Developed to generate a strong password.<br></br></p>
-                                        <p className='portfolio-item-p'><span>Tech stack : </span>ReactJS, Tostify library, CSS<br></br></p>
-                                        <ul>
-                                            <p><span>Highlights : </span></p>
-                                            <li>Responsive across all screens.</li>
-                                            <li>Implemented React tostify for giving alert whether the password is copied or not.</li>
-                                            <li>User can select the range of the password size from 8-42.</li>
-                                        </ul> <br></br>
-                                        <p> <span>Source code:</span> <a href='https://github.com/vivinprabhu/Password-Generator-ReactJS' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vivinprabhu.github.io/Password-Generator-ReactJS/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
-                                    </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                                    <div className="portfolio-item padd-15" data-aos="zoom-in">
-                                        <div className="portfolio-item-inner shadow-dark">
-                                            <div className="portfolio-img">
-                                                <img src={project2} alt='project2' />
-                                            </div>
-                                        </div>
-                                        <p className='portfolio-item-p'><span>Description : </span>Merniverse is a learning platform for mern stack.<br></br></p>
-                                        <p className='portfolio-item-p'><span>Tech stack : </span>MongoDB, ExpressJS, ReactJS, NodeJS, GSheet DB<br></br></p>
+
+                {/* Section-4 Projects */}
+
+                <div className="section section-4" id='projects'>
+                    <h1 className='section-title'>Projects</h1>
+                    <div className="tab-buttons">
+                        <button className={activeTab === 'development' ? "active" : ""} onClick={() => changeTab("development")}>
+                            Dev
+                        </button>
+                        <button className={activeTab === 'creative' ? "active" : ""} onClick={() => changeTab("creative")}>
+                            Editing
+                        </button>
+                    </div>
+
+                    <div className="tab-contents">
+                        {activeTab === "development" && (
+                            <div className="project-overall-container">
+                                <div className="project-individual-container" data-aos="fade-up">
+                                    <div className="project-details-container">
+                                        <img src={project1} alt="project 1" />
+                                        <p><span>Description : </span>Merniverse is a learning platform for mern stack.</p>
+                                        <p><span>Highlights : </span></p>
                                         <ul>
-                                            <p><span>Highlights : </span></p>
                                             <li>JWT token-based login system with email verification while signup.</li>
                                             <li>Stored passwords securely in the database with salting encryption.</li>
                                             <li>E-certificates will be generated and emailed automatically.</li>
-                                        </ul> <br></br>
-                                        <p> <span>Frontend source code:</span> <a href='https://github.com/vivinprabhu/Merniverse-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Backend source code:</span> <a href='https://github.com/vivinprabhu/Merniverse-Backend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://merniverse.onrender.com/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
-                                    </div>
+                                        </ul>
+                                        <p><span>Frontend source code : </span><a href="https://github.com/vivinprabhu/Merniverse-Frontend" target='_blank' rel="noreferrer">Click here!</a></p>
+                                        <p><span>Backend source code : </span><a href="https://github.com/vivinprabhu/Merniverse-Backend" target='_blank' rel="noreferrer">Click here!</a></p>
+                                        <p><span>Live demo : </span><a href="https://merniverse.onrender.com/" target='_blank' rel="noreferrer">Click here!</a></p>
 
-                                    <div className="portfolio-item padd-15" data-aos="zoom-in">
-                                        <div className="portfolio-item-inner shadow-dark">
-                                            <div className="portfolio-img">
-                                                <img src={project3} alt='project3' />
-                                            </div>
+                                        <div className="journey-skills">
+                                            <p>MongoDB</p>
+                                            <p>ExpressJS</p>
+                                            <p>ReactJS</p>
+                                            <p>NodeJS</p>
+                                            <p>GSheet DB</p>
                                         </div>
-                                        <p className='portfolio-item-p'><span>Description : </span>NoteX is a simple application for taking and sharing our notes.<br></br></p>
-                                        <p className='portfolio-item-p'><span>Tech stack : </span>MongoDB, ExpressJS, ReactJS, NodeJS, AOS-React library, Redux<br></br></p>
+                                    </div>
+                                </div>
+                                <div className="project-individual-container" data-aos="fade-up">
+                                    <div className="project-details-container">
+                                        <img src={project2} alt="project 2" />
+                                        <p><span>Description : </span>NoteX is a simple application for taking and sharing our notes.</p>
+                                        <p><span>Highlights : </span></p>
                                         <ul>
-                                            <p><span>Highlights : </span></p>
                                             <li>Implemented relational mapping between collections.</li>
                                             <li>Storing JWT in httpOnly cookie ensure to avoid XSS attacks.</li>
                                             <li>Implemented role-based permissions in API calls.</li>
-                                        </ul> <br></br>
-                                        <p> <span>Frontend source code:</span> <a href='https://github.com/vivinprabhu/NoteX-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Backend source code:</span> <a href='https://github.com/vivinprabhu/NoteX-Backend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://notex-amfu.onrender.com/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
-                                    </div>
+                                        </ul>
+                                        <p><span>Frontend source code : </span><a href="https://github.com/vivinprabhu/NoteX-Frontend" target='_blank' rel="noreferrer">Click here!</a></p>
+                                        <p><span>Backend source code : </span><a href="https://github.com/vivinprabhu/NoteX-Backend" target='_blank' rel="noreferrer">Click here!</a></p>
+                                        <p><span>Live demo : </span><a href="https://notex-amfu.onrender.com/" target='_blank' rel="noreferrer">Click here!</a></p>
 
-                                    <div className="portfolio-item padd-15" data-aos="zoom-in">
-                                        <div className="portfolio-item-inner shadow-dark">
-                                            <div className="portfolio-img">
-                                                <img src={project4} alt='project4' />
-                                            </div>
+                                        <div className="journey-skills">
+                                            <p>MongoDB</p>
+                                            <p>ExpressJS</p>
+                                            <p>ReactJS</p>
+                                            <p>NodeJS</p>
+                                            <p>AOS-React</p>
+                                            <p>Redux</p>
                                         </div>
-                                        <p className='portfolio-item-p'><span>Description : </span>(Group project) AirJio is a mobile recharge application.<br></br></p>
-                                        <p className='portfolio-item-p'><span>Tech stack : </span>React Vite, CSS<br></br></p>
+                                    </div>
+                                </div>
+                                <div className="project-individual-container" data-aos="fade-up">
+                                    <div className="project-details-container">
+                                        <img src={project3} alt="project 3" />
+                                        <p><span>Description : </span>AirJio is a mobile recharge application. (Group project)</p>
+                                        <p><span>Highlights : </span></p>
                                         <ul>
-                                            <p><span>Highlights : </span></p>
                                             <li>Responsive across all screens.</li>
                                             <li>RazorPay (test) have been implemented for secure payments.</li>
                                             <li>Freely RazorPay (test) will not be worked while hosting.</li>
-                                        </ul> <br></br>
-                                        <p> <span>Source code:</span> <a href='https://github.com/vivinprabhu/AirJio-Frontend' target="_blank" rel="noopener noreferrer">Click here!</a> <br></br> <span>Live Demo:</span> <a href='https://vivinprabhu.github.io/AirJio-Frontend/' target="_blank" rel="noopener noreferrer">Click here!</a></p>
+                                        </ul>
+                                        <p><span>Frontend source code : </span><a href="https://github.com/vivinprabhu/AirJio-Frontend" target='_blank' rel="noreferrer">Click here!</a></p>
+                                        <p><span>Live demo : </span><a href="https://vivinprabhu.github.io/AirJio-Frontend/" target='_blank' rel="noreferrer">Click here!</a></p>
+
+                                        <div className="journey-skills">
+                                            <p>React Vite</p>
+                                            <p>CSS</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        )}
+                        {activeTab === "creative" && (
+                            <div className="project-overall-container">
+                                <div className="project-individual-container" data-aos="fade-up">
+                                    <div className="project-details-container">
+                                        <img src={edit1} alt="edit 1" />
+                                        <div className="journey-skills">
+                                            <p>LinkedIn Cover Photo</p>
+                                            <p>Resolution 1128px x 191px </p>
+                                            <p>Photoshop CC 2019</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="project-individual-container" data-aos="fade-up">
+                                    <div className="project-details-container">
+                                        <img src={edit2} alt="edit 2" />
+                                        <div className="journey-skills">
+                                            <p>Profile Photo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="project-individual-container" data-aos="fade-up">
+                                    <div className="project-details-container">
+                                        <img src={edit3} alt="edit 3" />
+                                        <div className="journey-skills">
+                                            <p>Poster designing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
 
-                    <section id='contact' className='contact section' data-aos="fade-up">
-                        <div className="container">
-                            <div className="row">
-                                <div className="section-title padd-15">
-                                    <h2>Contact Me</h2>
-                                </div>
-                            </div>
-                            <h3 className="contact-title padd-15">Talk to me?</h3>
-                            <h4 className="contact-sub-title padd-15"> Get in touch </h4>
-                            <div className="row">
-                                <div className="contact-info-item padd-15">
-                                    <div className="icon"><i className='fab fa-linkedin'></i></div>
-                                    <h4>LinkedIn</h4>
-                                    <p>linkedin.com/in/vivinprabhu</p>
-                                </div>
-                                <div className="contact-info-item padd-15">
-                                    <div className="icon"><i className='fa fa-map-marker-alt'></i></div>
-                                    <h4>Location</h4>
-                                    <p>Coimbatore,India</p>
-                                </div>
-                                <div className="contact-info-item padd-15">
-                                    <div className="icon"><i className='fa fa-envelope'></i></div>
-                                    <h4>Mail</h4>
-                                    <p>cseskct255vivinprabhu.s@gmail.com</p>
-                                </div>
-                                <div className="contact-info-item padd-15">
-                                    <div className="icon"><i className='fa fa-code'></i></div>
-                                    <h4>Leetcode</h4>
-                                    <p>leetcode.com/u/Vivinprabhu</p>
-                                </div>
-                            </div>
-                            <h3 className="contact-title padd-15">Send me an email</h3>
-                            <h4 className="contact-sub-title padd-15">I will respond you as soon as possible</h4>
-                            <div className="ping-me-button">
-                                <a href="mailto:cseskct255vivinprabhu.s@gmail.com" className='btn ping-me'>CLICK HERE TO MAIL ME</a>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </div>
-        </div>
+
+            <Footer />
+        </>
     )
 }
 
