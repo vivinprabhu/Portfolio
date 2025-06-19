@@ -42,7 +42,7 @@ const Portfolio = () => {
                 <div className="section section-1" id='about'>
                     <h1 data-aos="zoom-in">Hey <span style={{ fontStyle: 'italic' }}>there,</span></h1>
                     <h1 data-aos="zoom-in">I am <span>Vivinprabhu</span></h1>
-                    <p data-aos="zoom-in">a software developer and I possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelance work, so if you know anyone looking for a developer or editor, feel free to reach me out! </p>
+                    <p data-aos="zoom-in">a software developer and I possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelancing. If you are looking for a full stack developer or editor, feel free to reach me! </p>
 
                     <a target='blank' href="https://drive.google.com/file/d/1mNdnr4Zyb3VuZATmt1Wx70ThXGQ-Uxh9/view?usp=sharing" className='btn-resume'>Resume</a>
                 </div>
@@ -168,7 +168,7 @@ const Portfolio = () => {
                             </h3>
                             <h4 className='timeline-title' data-aos="zoom-out-left">BE Computer Science and Engineering</h4>
                             <p className='timeline-text' data-aos="zoom-out-left">
-                                Completed the Bachelor's degree with the CGPA of 8.23/10.
+                                Completed the Bachelor of Engineering degree in Computer Science and Engineering with the Cumulative Grade Point Average (CGPA) of <span style={{fontWeight: 'bold'}}>8.23/10</span> at a private institution in Coimbatore.
                             </p>
                         </div>
                         <div className="timeline-item">
@@ -180,8 +180,7 @@ const Portfolio = () => {
                             <p className='timeline-text' data-aos="zoom-out-left">
                                 i-exceed technology solutions is a Fintech company that helps the world’s leading banks and financial institutions deliver stunning user journeys for their customers and staff.
                                 <ul>
-                                    <li>Delivered a technical presentation on Dart for Web development, highlighting its capabilities and use cases.</li>
-                                    <li>Contributed to the development of a comprehensive Banking UI; independently designed and implemented the Insurance module.</li>
+                                    <li>Independently designed and developed the insurance module for a collaborative Flutter-based banking application UI, ensuring seamless integration with the overall system.</li>
                                 </ul>
 
                                 <div className="journey-skills">
