@@ -44,7 +44,7 @@ const Portfolio = () => {
                     <h1 data-aos="zoom-in">I am <span>Vivinprabhu</span></h1>
                     <p data-aos="zoom-in">a software developer and I possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelancing. If you are looking for a full stack developer or editor, feel free to reach me! </p>
 
-                    <a target='blank' href="https://drive.google.com/file/d/1mNdnr4Zyb3VuZATmt1Wx70ThXGQ-Uxh9/view?usp=sharing" className='btn-resume'>Resume</a>
+                    <a target='blank' href="https://drive.google.com/file/d/1Q4skP-Kc9y2BXUkU4CTb-0SF4IIHk1HW/view?usp=sharing" className='btn-resume'>Resume</a>
                 </div>
 
                 {/* Section-2 Skills */}
