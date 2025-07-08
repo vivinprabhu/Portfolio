@@ -26,31 +26,31 @@ const Portfolio = () => {
 
                 <div className="navbar">
                     <div className="logo">
-                        <a href='#about'><span>V</span>ivinprabhu</a>
+                        <a href='#about' data-aos="fade-down"><span>V</span>ivinprabhu</a>
                     </div>
 
                     <ul className='nav'>
-                        <li><a href="#about"><i className='material-icons'>person</i>About me</a></li>
-                        <li><a href="#skills"><i className='material-icons'>construction</i>Skills</a></li>
-                        <li><a href="#journey"><i className='material-icons'>timeline</i>Journey</a></li>
-                        <li><a href="#projects"><i className='material-icons'>work</i>Projects</a></li>
+                        <li data-aos="fade-down"><a href="#about"><i className='material-icons'>person</i>About me</a></li>
+                        <li data-aos="fade-down"><a href="#skills"><i className='material-icons'>construction</i>Skills</a></li>
+                        <li data-aos="fade-down"><a href="#journey"><i className='material-icons'>timeline</i>Journey</a></li>
+                        <li data-aos="fade-down"><a href="#projects"><i className='material-icons'>work</i>Projects</a></li>
                     </ul>
                 </div>
 
                 {/* Section-1 About me */}
 
                 <div className="section section-1" id='about'>
-                    <h1 data-aos="zoom-in">Hey <span style={{ fontStyle: 'italic' }}>there,</span></h1>
-                    <h1 data-aos="zoom-in">I am <span>Vivinprabhu</span></h1>
-                    <p data-aos="zoom-in">a software developer and I possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelancing. If you are looking for a full stack developer or editor, feel free to reach me! </p>
+                    <h1 data-aos="fade-up">Hey <span style={{ fontStyle: 'italic' }}>there,</span></h1>
+                    <h1 data-aos="fade-up">I am <span>Vivinprabhu</span></h1>
+                    <p data-aos="fade-up">a software developer and I possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelancing. If you are looking for a full stack developer or editor, feel free to reach me! </p>
 
-                    <a target='blank' href="https://drive.google.com/file/d/1Q4skP-Kc9y2BXUkU4CTb-0SF4IIHk1HW/view?usp=sharing" className='btn-resume'>Resume</a>
+                    <a data-aos="fade-up" target='blank' href="https://drive.google.com/file/d/1Q4skP-Kc9y2BXUkU4CTb-0SF4IIHk1HW/view?usp=sharing" className='btn-resume'>Resume</a>
                 </div>
 
                 {/* Section-2 Skills */}
 
                 <div className="section section-2" id='skills'>
-                    <h1 className='section-title'>Skills</h1>
+                    <h1 className='section-title' data-aos="fade-right">Skills</h1>
                     <div className="skill-list">
                         <div className="skill-list-container">
 
@@ -157,27 +157,27 @@ const Portfolio = () => {
 
                 {/* Section-3 Journey */}
 
-                <div className="section section-3" id='journey'>
-                    <h1 className='section-title'>Journey</h1>
+                <div className="section section-3" id='journey' >
+                    <h1 className='section-title' data-aos="fade-left">Journey</h1>
 
                     <div className="timeline">
                         <div className="timeline-item">
                             <div className="circle-dot"></div>
-                            <h3 className="timeline-date" data-aos="zoom-out-left">
+                            <h3 className="timeline-date" data-aos="fade-left">
                                 <span className="material-icons">calendar_month</span> Nov 2021 - Mar 2025
                             </h3>
-                            <h4 className='timeline-title' data-aos="zoom-out-left">BE Computer Science and Engineering</h4>
-                            <p className='timeline-text' data-aos="zoom-out-left">
+                            <h4 className='timeline-title' data-aos="fade-left">BE Computer Science and Engineering</h4>
+                            <p className='timeline-text' data-aos="fade-left">
                                 Completed the Bachelor of Engineering degree in Computer Science and Engineering with the Cumulative Grade Point Average (CGPA) of <span style={{fontWeight: 'bold'}}>8.23/10</span> at a private institution in Coimbatore.
                             </p>
                         </div>
                         <div className="timeline-item">
                             <div className="circle-dot"></div>
-                            <h3 className="timeline-date" data-aos="zoom-out-left">
+                            <h3 className="timeline-date" data-aos="fade-left">
                                 <span className="material-icons">calendar_month</span> May 2025 - Present
                             </h3>
-                            <h4 className='timeline-title' data-aos="zoom-out-left">Software Developer Trainee at i-exceed technology</h4>
-                            <p className='timeline-text' data-aos="zoom-out-left">
+                            <h4 className='timeline-title' data-aos="fade-left">Software Developer Trainee at i-exceed technology</h4>
+                            <p className='timeline-text' data-aos="fade-left">
                                 i-exceed technology solutions is a Fintech company that helps the world’s leading banks and financial institutions deliver stunning user journeys for their customers and staff.
                                 <ul>
                                     <li>Independently designed and developed the insurance module for a collaborative Flutter-based banking application UI, ensuring seamless integration with the overall system.</li>
@@ -197,7 +197,7 @@ const Portfolio = () => {
                 {/* Section-4 Projects */}
 
                 <div className="section section-4" id='projects'>
-                    <h1 className='section-title'>Projects</h1>
+                    <h1 className='section-title' data-aos="fade-right">Projects</h1>
                     <div className="tab-buttons">
                         <button className={activeTab === 'development' ? "active" : ""} onClick={() => changeTab("development")}>
                             Dev

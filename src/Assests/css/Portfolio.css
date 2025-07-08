@@ -8,6 +8,20 @@
     --light-orange: #d51e1e41;
 }
 
+::-webkit-scrollbar{
+    color: var(--text-orange);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--text-orange);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color); 
+}
+
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -22,6 +36,7 @@ body {
     font-family: "Metrophobic", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: var(--background-color);
 }
 
 * {
@@ -33,7 +48,7 @@ body {
 }
 
 .section {
-    min-height: 80vh;
+    min-height: 10vh;
     width: auto;
     background-color: var(--background-color);
     color: var(--white);
@@ -322,7 +337,7 @@ p {
 .tab-buttons button:hover,
 .tab-buttons button.active {
     color: var(--text-orange);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .tab-content {
@@ -474,11 +489,16 @@ p {
     }
 }
 
-@media(max-width:710px) {
+@media(max-width:850px) {
 
     .section-3 , .section-2, .section-1, .section-4 {
         padding: 15% 0% 5% 5%;
     }
+
+}
+
+@media(max-width:710px) {
+
 
     .timeline .timeline-text ul li {
         font-size: 16px;
@@ -526,7 +546,7 @@ p {
 @media(max-width:420px) {
 
     .section-1 {
-        margin-top: 3rem;
+        margin-top: 5rem;
         padding: 5% 10%;
     }
 
@@ -535,6 +555,7 @@ p {
     }
 
     .section-2 {
+        margin-top: 3rem;
         padding: 0% 5%;
     }
 
