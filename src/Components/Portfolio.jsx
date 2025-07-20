@@ -168,7 +168,7 @@ const Portfolio = () => {
                             </h3>
                             <h4 className='timeline-title' data-aos="fade-left">BE Computer Science and Engineering</h4>
                             <p className='timeline-text' data-aos="fade-left">
-                                Completed the Bachelor of Engineering degree in Computer Science and Engineering with the Cumulative Grade Point Average (CGPA) of <span style={{fontWeight: 'bold'}}>8.23/10</span> at a private institution in Coimbatore.
+                                Completed the Bachelor of Engineering degree in Computer Science and Engineering with the Cumulative Grade Point Average (CGPA) of <span style={{fontWeight: 'bold'}}>8.17/10</span> at a private institution in Coimbatore.
                             </p>
                         </div>
                         <div className="timeline-item">
@@ -295,6 +295,9 @@ const Portfolio = () => {
                                         <img src={edit2} alt="edit 2" />
                                         <div className="journey-skills">
                                             <p>Profile Photo</p>
+                                            <p>Ratio 1:1</p>
+                                            <p>Photoshop CC 2019</p>
+                                            <p>Silhouette</p>
                                         </div>
                                     </div>
                                 </div>
