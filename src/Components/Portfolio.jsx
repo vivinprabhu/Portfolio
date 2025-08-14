@@ -40,8 +40,8 @@ const Portfolio = () => {
                 {/* Section-1 About me */}
 
                 <div className="section section-1" id='about'>
-                    <h1 data-aos="fade-up">Hey <span style={{ fontStyle: 'italic' }}>there,</span></h1>
-                    <h1 data-aos="fade-up">I am <span>Vivinprabhu</span></h1>
+                    <h1 data-aos="fade-up">Hey <span style={{ fontStyle: 'italic', fontWeight: 200 }}>there,</span></h1>
+                    <h1 data-aos="fade-up">I am <span style={ {fontWeight: 700}}>Vivinprabhu</span></h1>
                     <p data-aos="fade-up">a software developer and I possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelancing. If you are looking for a full stack developer or editor, feel free to reach me! </p>
 
                     <a data-aos="fade-up" target='blank' href="https://drive.google.com/file/d/1Q4skP-Kc9y2BXUkU4CTb-0SF4IIHk1HW/view?usp=sharing" className='btn-resume'>Resume</a>
@@ -184,7 +184,6 @@ const Portfolio = () => {
                                 </ul>
 
                                 <div className="journey-skills">
-                                    <p>Java</p>
                                     <p>Dart</p>
                                     <p>Flutter</p>
                                 </div>

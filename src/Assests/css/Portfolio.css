@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quattrocento:wght@400;700&display=swap');
 
 :root {
     --background-color: #02000e;
@@ -8,17 +9,17 @@
     --light-orange: #d51e1e41;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     color: var(--text-orange);
     width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: var(--text-orange);
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background-color); 
+    background: var(--background-color);
 }
 
 
@@ -133,6 +134,13 @@ body {
     padding: 10% 15%;
 }
 
+.section-title {
+    font-family: "Quattrocento", serif;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--text-orange);
+}
+
 .section-1 h1,
 p {
     padding: 2%;
@@ -145,7 +153,6 @@ p {
 
 .section-1 .btn-resume {
     font-size: 16px;
-    font-weight: 500;
     padding: 12px 35px;
     color: var(--white);
     border-radius: 40px;
@@ -334,10 +341,10 @@ p {
     font-size: 18px;
 }
 
-.tab-buttons button:hover,
 .tab-buttons button.active {
     color: var(--text-orange);
     font-size: 16px;
+    transition: 0.2s ease-in-out;
 }
 
 .tab-content {
@@ -491,7 +498,10 @@ p {
 
 @media(max-width:850px) {
 
-    .section-3 , .section-2, .section-1, .section-4 {
+    .section-3,
+    .section-2,
+    .section-1,
+    .section-4 {
         padding: 15% 0% 5% 5%;
     }
 
