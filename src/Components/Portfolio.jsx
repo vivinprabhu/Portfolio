@@ -190,7 +190,7 @@ const Portfolio = () => {
                             <h3 className="timeline-date" data-aos="fade-left">
                                 <span className="material-icons">calendar_month</span> May 2025 - Present
                             </h3>
-                            <a href='https://www.i-exceed.com/'><h4 className='timeline-title' data-aos="fade-left">Software Engineer Trainee at i-exceed technology</h4></a>
+                            <a href='https://www.i-exceed.com/' target='_blank' rel='noopener noreferrer'><h4 className='timeline-title' data-aos="fade-left">Software Engineer Trainee at i-exceed technology</h4></a>
                             <p className='timeline-text' data-aos="fade-left">
                                 i-exceed technology solutions is a Fintech company that helps the world’s leading banks and financial institutions deliver stunning user journeys for their customers and staff.
                                 <ul>
