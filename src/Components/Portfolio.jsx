@@ -41,8 +41,8 @@ const Portfolio = () => {
 
                 <div className="section section-1" id='about'>
                     <h1 data-aos="fade-up">Hey <span style={{ fontStyle: 'italic', fontWeight: 200 }}>there,</span></h1>
-                    <h1 data-aos="fade-up">I am <span style={ {fontWeight: 700}}>Vivinprabhu</span></h1>
-                    <p data-aos="fade-up">a software developer and I possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelancing. If you are looking for a full stack developer or editor, feel free to reach me! </p>
+                    <h1 data-aos="fade-up">I am <span style={{ fontWeight: 700 }}>Vivinprabhu</span></h1>
+                    <p data-aos="fade-up">software engineer, possess the capability to learn new technologies and have the skills to develop responsive and dynamic frontend and secure backend, and integrate them seamlessly. Besides coding, I love photo editing and video editing. I’m open to freelancing. If you are looking for a full stack developer (cross-platform mobile or web application) or editor, feel free to reach me! </p>
 
                     <a data-aos="fade-up" target='blank' href="https://drive.google.com/file/d/1Q4skP-Kc9y2BXUkU4CTb-0SF4IIHk1HW/view?usp=sharing" className='btn-resume'>Resume</a>
                 </div>
@@ -94,6 +94,20 @@ const Portfolio = () => {
                                     <div className="skill-list-box" data-aos="zoom-in">
                                         <i className="devicon-javascript-plain"></i>
                                         <p>JavaScript</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="skill-list-box-container">
+                                <h2 className='skill-box-title' data-aos="zoom-out">Cross mobile application</h2>
+                                <div className="skill-items">
+                                    <div className="skill-list-box" data-aos="flip-up">
+                                        <i className="devicon-dart-plain"></i>
+                                        <p>Dart</p>
+                                    </div>
+                                    <div className="skill-list-box" data-aos="flip-up">
+                                        <i className="devicon-flutter-plain"></i>
+                                        <p>Flutter</p>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +182,7 @@ const Portfolio = () => {
                             </h3>
                             <h4 className='timeline-title' data-aos="fade-left">BE Computer Science and Engineering</h4>
                             <p className='timeline-text' data-aos="fade-left">
-                                Completed the Bachelor of Engineering degree in Computer Science and Engineering with the Cumulative Grade Point Average (CGPA) of <span style={{fontWeight: 'bold'}}>8.17/10</span> at a private institution in Coimbatore.
+                                Completed the Bachelor of Engineering degree in Computer Science and Engineering with the Cumulative Grade Point Average (CGPA) of <span style={{ fontWeight: 'bold' }}>8.17/10</span> at a private institution in Coimbatore, India.
                             </p>
                         </div>
                         <div className="timeline-item">
@@ -176,11 +190,12 @@ const Portfolio = () => {
                             <h3 className="timeline-date" data-aos="fade-left">
                                 <span className="material-icons">calendar_month</span> May 2025 - Present
                             </h3>
-                            <h4 className='timeline-title' data-aos="fade-left">Software Developer Trainee at i-exceed technology</h4>
+                            <a href='https://www.i-exceed.com/'><h4 className='timeline-title' data-aos="fade-left">Software Engineer Trainee at i-exceed technology</h4></a>
                             <p className='timeline-text' data-aos="fade-left">
                                 i-exceed technology solutions is a Fintech company that helps the world’s leading banks and financial institutions deliver stunning user journeys for their customers and staff.
                                 <ul>
-                                    <li>Independently designed and developed the insurance module for a collaborative Flutter-based banking application UI, ensuring seamless integration with the overall system.</li>
+                                    <li>Worked in the Framework Team to design and develop reusable, customizable UI widgets used across multiple projects for the organization projects.</li>
+                                    <li>Built and maintained token-based components such as Slider, Accordion, Avatar, and Popup, ensuring consistency, theming flexibility, and scalability across applications.</li>
                                 </ul>
 
                                 <div className="journey-skills">
@@ -263,8 +278,8 @@ const Portfolio = () => {
                                         <p><span>Highlights : </span></p>
                                         <ul>
                                             <li>Responsive across all screens.</li>
-                                            <li>RazorPay (test) have been implemented for secure payments.</li>
-                                            <li>Freely RazorPay (test) will not be worked while hosting.</li>
+                                            <li>RazorPay (test version) have been implemented for secure payments.</li>
+                                            <li>Free RazorPay (test verion) won't work while hosting.</li>
                                         </ul>
                                         <p><span>Frontend source code : </span><a href="https://github.com/vivinprabhu/AirJio-Frontend" target='_blank' rel="noreferrer">Click here!</a></p>
                                         <p><span>Live demo : </span><a href="https://vivinprabhu.github.io/AirJio-Frontend/" target='_blank' rel="noreferrer">Click here!</a></p>

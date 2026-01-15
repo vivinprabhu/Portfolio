@@ -21,7 +21,7 @@ const Footer = () => {
             <p>Github</p>
           </a>
 
-          <a className="social-media" href='mailto:cseskct255vivinprabhu.s@gmail.com' target='_blank' rel='noopener noreferrer'>
+          <a className="social-media" href='mailto:vivinprabhu.dev@gmail.com' target='_blank' rel='noopener noreferrer'>
             <span className="material-icons">mail</span>
             <p>Gmail</p>
           </a>

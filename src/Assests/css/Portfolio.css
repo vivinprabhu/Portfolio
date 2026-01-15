@@ -131,7 +131,7 @@ body {
 /* Section-1 About */
 
 .section-1 {
-    padding: 10% 15%;
+    padding: 10% 8%;
 }
 
 .section-title {
@@ -171,7 +171,7 @@ p {
 /* Section-2 */
 
 .section-2 {
-    padding: 1% 15%;
+    padding: 0% 8%;
 }
 
 .skill-list .skill-list-container .skill-list-box-container {
@@ -222,7 +222,7 @@ p {
 /* Section-3 */
 
 .section-3 {
-    padding: 3% 15%;
+    padding: 3% 8%;
 }
 
 
@@ -286,6 +286,10 @@ p {
     margin: 10px;
 }
 
+.timeline .timeline-item h4{
+    color: var(--text-orange);
+}
+
 .timeline .timeline-text ul {
     font-size: 16px;
     padding-left: 25px;
@@ -314,7 +318,7 @@ p {
 /* Section-4 */
 
 .section-4 {
-    padding: 0% 15%;
+    padding: 0% 8%;
 }
 
 .tab-buttons {
